@@ -36,13 +36,16 @@
 
     <header class="jumbotron">
         <div class="container">
-            <div class="row row-header">
+            <div class="row row-header align-items-center">
                 <div class="col-12 col-sm-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-12 offset-2 col-md-2 order-md-last align-items-center">
+                    <button class="btn btn-block bg-warning"><a href="#res1" >Reserve Table</a></button>
                 </div>
             </div>
         </div>
@@ -59,7 +62,9 @@
                     src="img/uthappizza.png" alt="uthappizza">
                     <div class="media-body">
                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">Hot</span> <span class="badge badge-pill badge-secondary">$4.99</span></span></h2>
+                        <div class="d-none d-lg-block">
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,8 +80,10 @@
                     <img class="d-flef mr-3 img-thumbnail align-self-center"
                     src="img/buffet.png" alt="buffet">
                     <div class="media-body">
-                        <h2>Weekend Grand Buffet</h2>
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                        <div class="d-none d-lg-block">
                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,10 +100,48 @@
                     <div class="media-body">
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
+                        <div class="d-none d-lg-block">
                         <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-12 offset-md-2 col-md-8">
+                <form id="res1">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-black">Reserve a table</h3>
+                    
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-md-2 col-form-label">Number of Guests</dt>
+                            <dd class="col-1"><span class="radio-inline"></span>
+                                <input type="radio" name="inlineradiooptions" id="radio1" value="option1"> 1</dd>
+                            <dd class="col-1"><span class="radio-inline"></span>
+                                <input type="radio" name="inlineradiooptions" id="radio2" value="option2"> 2</dd>    
+                            <dd class="col-1"><span class="radio-inline"></span>
+                                <input type="radio" name="inlineradiooptions" id="radio3" value="option3"> 3</dd>
+                            <dd class="col-1"><span class="radio-inline"></span>
+                                <input type="radio" name="inlineradiooptions" id="radio4" value="option4"> 4</dd>
+                            <dd class="col-1"><span class="radio-inline"></span>
+                                <input type="radio" name="inlineradiooptions" id="radio5" value="option5"> 5</dd>
+                            <dd class="col-1"><span class="radio-inline"></span>
+                                <input type="radio" name="inlineradiooptions" id="radio6" value="option6"> 6</dd>         
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-md-2 col-form-label">Date and Time</dt>   
+                            <dd class="col-md-3"><span class="date"></span><input type="date"></dd>
+                            <dd class="col-md-3"><span class="time"></span><input type="time"></dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-2 offset-2"><button type="submit" class="btn btn-dark">Reserve</button></dt>
+                        </dl>
+                    </div>
+                    
+                </div>
+            </div>
+            </form>
         </div>
     </div>
 
