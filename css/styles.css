@@ -9,7 +9,7 @@
   min-height: 400px; }
 
 .footer {
-  background-color: #41423c;
+  background-color: #D1C4E9;
   margin: 0px auto;
   padding: 20px 0px; }
 
@@ -52,3 +52,17 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.modal .modal-header {
+  background-color: #272525;
+  color: floralwhite; }
+  .modal .modal-header button {
+    color: floralwhite; }
+
+.modal .modal-body {
+  background-color: #D1C4E9; 
+  color: #0F0F0F;
+}
+
+.modal .modal-footer {
+  background: #3e4234; }
